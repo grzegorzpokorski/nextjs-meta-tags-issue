@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export function generateMetadata(): Metadata {
-  return {
-    title: "/",
-    description: "desc",
-  };
+export const metadata: Metadata = {
+  title: "/",
+  description: "desc",
 }
 
 export default function Home() {

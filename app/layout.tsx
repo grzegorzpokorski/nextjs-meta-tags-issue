@@ -1,19 +1,16 @@
 import type { Metadata } from "next";
 
-export function generateMetadata(): Metadata {
-  return {
-    robots: {
+export const metadata: Metadata = {
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
       index: true,
       follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        noimageindex: true,
-      },
+      noimageindex: true,
     },
-  };
+  },
 }
-
 
 export default function RootLayout({ children }) {
   return (
