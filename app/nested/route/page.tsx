@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export function generateMetadata(): Metadata {
   return {
@@ -13,12 +12,5 @@ export function generateMetadata(): Metadata {
 }
 
 export default function Page() {
-  return (
-    <div>
-      <h1>current: /nested/route</h1>
-      <Link href="/">Link to / page</Link>
-      <br />
-      <Link href="/nested">Link to /nested page</Link>
-    </div>
-  );
+  return <></>;
 }

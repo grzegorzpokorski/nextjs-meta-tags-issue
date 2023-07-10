@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Links } from "./Links";
+import { CurrentPagePath } from "./CurrentPagePath";
 
 export function generateMetadata(): Metadata {
   return {
@@ -19,7 +21,11 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <head />
-      <body>{children}</body>
+      <body>
+        <CurrentPagePath/>
+        <Links />
+        {children}
+      </body>
     </html>
   )
 }
